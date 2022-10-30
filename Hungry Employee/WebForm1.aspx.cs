@@ -40,7 +40,8 @@ namespace Hungry_Employee
                 Response.Redirect("https://www.google.com");
             }
             else
-                Response.Redirect("https://www.youtube.com");
+                Response.Redirect("https://www.spotify.com");
+
             //DataTable dt = new DataTable();
             //SqlDataAdapter da = new SqlDataAdapter(cmd);
             //da.Fill(dt);
