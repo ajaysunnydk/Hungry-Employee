@@ -1,8 +1,13 @@
 body {
-  background-color: #9f9da7;
-  font-size: 1.6rem;
-  font-family: "Open Sans", sans-serif;
-  color: #2b3e51;
+    background-color: #FF3CAC;
+    background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-size: 1.6rem;
+    font-family: "Open Sans", sans-serif;
+    color: #2b3e51;
 }
 
 h2 {

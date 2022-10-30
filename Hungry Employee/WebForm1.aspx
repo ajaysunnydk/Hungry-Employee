@@ -24,7 +24,8 @@
 
         </form>
         <div id="create-account-wrap">
-            <p>Not a member? <a href="#">Create Account</a></p>
+            <p>Not a member?  <asp:HyperLink ID="Link1" runat="server" NavigateUrl="~/Registration.aspx" Text="Create Account" /> </p>
+            
         </div>
     </div>
     

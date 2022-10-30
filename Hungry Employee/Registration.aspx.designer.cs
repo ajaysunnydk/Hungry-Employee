@@ -11,7 +11,7 @@ namespace Hungry_Employee
 {
 
 
-    public partial class WebForm1
+    public partial class Registration
     {
 
         /// <summary>
@@ -22,6 +22,15 @@ namespace Hungry_Employee
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+
+        /// <summary>
+        /// name control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputText name;
 
         /// <summary>
         /// username control.
@@ -40,6 +49,15 @@ namespace Hungry_Employee
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlInputPassword password;
+
+        /// <summary>
+        /// cnfpassword control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputPassword cnfpassword;
 
         /// <summary>
         /// login control.
