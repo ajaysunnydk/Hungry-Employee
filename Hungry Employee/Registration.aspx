@@ -9,13 +9,21 @@
     <link rel="stylesheet" href="styles/style.css" />
 </head>
 <body>
-
+    <%--<script>
+        function myFuntion() {
+            alert("Password not matched!");
+        }
+    </script>--%>
 
     <div id="login-form-wrap">
         <form id="form1" runat="server">
 
             <p>
                 <input runat="server" type="text" id="name" name="name" placeholder="Name" required="required" /><i class="validation"><span></span><span></span></i>
+            </p>
+
+            <p>
+                <input runat="server" type="text" id="phone" name="phonenumber" placeholder="Phone Number" required="required" /><i class="validation"><span></span><span></span></i>
             </p>
 
             <p>
@@ -29,6 +37,9 @@
             </p>
             <p>
                 <asp:Button ID="login" runat="server" Text="Create Account" OnClick="login_Click" />
+            </p>
+            <p style="font-size: 12px;color: red;" id="hiddenp" runat="server" visible="false">
+                Username Already Exists
             </p>
 
         </form>

@@ -33,6 +33,15 @@ namespace Hungry_Employee
         protected global::System.Web.UI.HtmlControls.HtmlInputText name;
 
         /// <summary>
+        /// phone control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputText phone;
+
+        /// <summary>
         /// username control.
         /// </summary>
         /// <remarks>
@@ -67,6 +76,15 @@ namespace Hungry_Employee
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button login;
+
+        /// <summary>
+        /// hiddenp control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl hiddenp;
 
         /// <summary>
         /// Link1 control.
