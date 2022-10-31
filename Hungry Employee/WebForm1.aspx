@@ -21,12 +21,16 @@
                 <asp:Button id="login" runat="server" Text="Login" OnClick="login_Click" />
             </p>
         <%--<asp:GridView ID="GridView1" runat="server"></asp:GridView>--%>
+        <p style="font-size: 12px;color: red;" id="hiddenwrong" runat="server" visible="false">
+                Wrong Password
+            </p>
 
         </form>
         <div id="create-account-wrap">
             <p>Not a member?  <asp:HyperLink ID="Link1" runat="server" NavigateUrl="~/Registration.aspx" Text="Create Account" /> </p>
             
         </div>
+
     </div>
     
     

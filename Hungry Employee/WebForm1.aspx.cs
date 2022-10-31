@@ -37,10 +37,15 @@ namespace Hungry_Employee
             int numRows = dt.Rows.Count;
             if (numRows == 1)
             {
-                Response.Redirect("https://www.google.com");
+                //Response.Redirect("https://www.google.com");
+                Response.Redirect("homepage.aspx");
             }
             else
-                Response.Redirect("https://www.spotify.com");
+            {
+                //Response.Redirect("https://www.spotify.com");
+                hiddenwrong.Visible = true;
+            }
+
 
             //DataTable dt = new DataTable();
             //SqlDataAdapter da = new SqlDataAdapter(cmd);

@@ -36,18 +36,6 @@ namespace Hungry_Employee
             //    
             //}
             int count1 = 0;
-            try
-            {
-                SqlCommand cmd2 = con.CreateCommand();
-                cmd2.CommandType = CommandType.Text;
-                cmd2.CommandText = "insert into RegDetails(name,phonenum,username,password) values ('" + name.Value + "','" + phone.Value + "','" + username.Value + "','" + password.Value + "')";
-                count1 = cmd2.ExecuteNonQuery();
-            }
-            catch (SqlException ex)
-            {
-                //ScriptManager.RegisterStartupScript(this, GetType(), "showalert", "alert('Username Alreay Exists');", true);
-                hiddenp.Visible = true;
-            }
             if (password.Value != cnfpassword.Value)
             {
                 //Response.Write("<script>alert('Password Mismatched!');</script>");
@@ -55,6 +43,23 @@ namespace Hungry_Employee
                 hiddenp.InnerText = "Password Not Matched";
                 hiddenp.Visible = true;
             }
+            else
+            {
+                try
+                {
+                    SqlCommand cmd2 = con.CreateCommand();
+                    cmd2.CommandType = CommandType.Text;
+                    cmd2.CommandText = "insert into RegDetails(name,phonenum,username,password) values ('" + name.Value + "','" + phone.Value + "','" + username.Value + "','" + password.Value + "')";
+                    count1 = cmd2.ExecuteNonQuery();
+                }
+                catch (SqlException ex)
+                {
+                    //ScriptManager.RegisterStartupScript(this, GetType(), "showalert", "alert('Username Alreay Exists');", true);
+                    hiddenp.Visible = true;
+                }
+            }
+            
+            
             if(count1>0)
             {
                 Response.Redirect("WebForm1.aspx");
