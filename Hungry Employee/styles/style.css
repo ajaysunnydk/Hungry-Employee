@@ -10,6 +10,7 @@ body {
     color: #2b3e51;
 }
 
+
 h2 {
   font-weight: 300;
   text-align: center;
@@ -71,9 +72,9 @@ a:active:hover {
 input {
   display: block;
   box-sizing: border-box;
-  width: 100%;
+  width: 90%;
   outline: none;
-  height: 60px;
+  height: 52px;
   line-height: 60px;
   border-radius: 4px;
 }
@@ -132,6 +133,7 @@ input[type="password"]:valid ~ .validation span:last-child {
           transform: rotate(45deg);
 }
 
+
 .validation {
   display: none;
   position: absolute;
@@ -143,20 +145,24 @@ input[type="password"]:valid ~ .validation span:last-child {
 }
 
 input[type="submit"] {
-  border: none;
   display: block;
-  background-color: #3ca9e2;
-  color: #fff;
-  font-weight: bold;
-  text-transform: uppercase;
+    border-style: none;
+    border-color: inherit;
+    border-width: medium;
+    background-color: #3ca9e2;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
   cursor: pointer;
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
-  font-size: 18px;
-  position: relative;
-  display: inline-block;
-  cursor: pointer;
-  text-align: center;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    font-size: 18px;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    top: 1px;
+    left: -8px;
 }
 input[type="submit"]:hover {
   background-color: #329dd5;
